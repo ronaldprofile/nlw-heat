@@ -1,0 +1,123 @@
+.sendMessageFormWrapper {
+  padding: 1.5rem;
+  position: relative;
+  background: #1b1b1f;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .buttonSignOut {
+    background: transparent;
+    color: #c4c4cc;
+    border: 0;
+    font-size: 0;
+
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    cursor: pointer;
+    transition: filter 0.2s;
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.userInformation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .userImage {
+    padding: 3px;
+    background: linear-gradient(104.3deg, #ff008e 0.48%, #ffcd1e 100%);
+    border-radius: 50%;
+    line-height: 0;
+
+    img {
+      width: 94px;
+
+      height: 94px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #121214;
+    }
+  }
+
+  .userName {
+    margin-top: 1rem;
+
+    strong {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+    }
+  }
+
+  .userGithub {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+      color: #c4c4cc;
+    }
+  }
+}
+
+.sendMessageForm {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  background: #202024;
+
+  label {
+    padding: 1.125rem 1.5rem;
+    font-size: 1.25rem;
+    text-align: left;
+    background: #29292e;
+  }
+
+  textarea {
+    height: 160px;
+    padding: 1.5rem;
+    background: transparent;
+    border: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #e1e1e6;
+
+    resize: none;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &::placeholder {
+      color: #8d8d99;
+    }
+  }
+
+  button {
+    padding: 0.625rem 2rem;
+    margin: 1.5rem;
+    align-self: flex-end;
+
+    font-weight: bold;
+    background: #ff008e;
+    color: #ffffff;
+
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: filter 0.2s;
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
